@@ -19,7 +19,7 @@ img {
 h2, h3{
     font-family: 'Varela Round', sans-serif;
     font-weight: bold;
-    padding-bottom: 10px;
+    padding: 10px;
 }
 
 p{
@@ -43,11 +43,12 @@ h2{
 nav{
     margin-top: 15px;
     position: absolute;
-    top: right;
+    top: 0;
     right: 0;
 }
 
 nav ul{
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
@@ -90,6 +91,10 @@ header{
 
 .parallax{
     background-image: url("../images/banner.jpg");
+    background-position: center center;
+    
+
+    
 }
 
 footer{
@@ -98,6 +103,29 @@ footer{
     text-align: center;
     background-color: #F1E0C9;
 
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: #F1E0C9;
+    color: #362C2C;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#message{
+    height: 200px;
 }
 
 .skip a{
@@ -122,8 +150,8 @@ footer{
 }
 
 .photos{
-    display: -ms-flexbox;
-    -ms-flex-wrap: wrap;
+    /*display: -ms-flexbox;
+    -ms-flex-wrap: wrap;*/
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
@@ -132,7 +160,7 @@ footer{
 }
 
 .photos img{
-    -ms-flex: 100%;
+    /*-ms-flex: 100%;*/
     flex: 100%;
     max-width: 100%;
     margin-top: 8px;
@@ -156,10 +184,9 @@ footer{
 
 .events{
     display: grid;
+    grid-template-columns: 1fr ;
     /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
-    grid-template-columns: 1fr;
     grid-gap: 20px;
-
     grid-column: 2 / span 2;
     grid-row: 3 / span 1;
 
@@ -167,7 +194,6 @@ footer{
 
 .about{
     display: grid;
-    /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
     grid-template-columns: 1fr;
     grid-gap: 20px;
 
@@ -232,7 +258,6 @@ footer{
 }
 
 
-
 /*.web_link, a:visited{
     text-decoration: none;
     color: #7284A8;
@@ -249,7 +274,7 @@ footer{
     padding-top: 40px;
 }
 
-.events #first {
+/*.events #first {
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
 }
