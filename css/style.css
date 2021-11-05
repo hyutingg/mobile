@@ -204,6 +204,7 @@ input[type=submit] {
 .outings{
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     grid-gap: 20px;
     grid-column: 2 / span 2;
     grid-row: 3 / span 1;
