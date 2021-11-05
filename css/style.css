@@ -1,0 +1,280 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Varela Round', sans-serif;
+    background-color: white;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h2, h3{
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+p{
+    padding: 10px;
+    line-height: 1.1;
+    color: #362C2C;
+}
+
+h1{
+    font-size: 70px;
+    text-align: center;
+    margin: 0 auto;
+    color: #362C2C;
+}
+
+h2{
+    font-size: 40px;
+    color: #7284A8;
+}
+
+nav{
+    margin-top: 15px;
+    position: absolute;
+    top: right;
+    right: 0;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+}
+
+nav li{
+    display: inline-block;
+    padding: 5px;
+    
+}
+
+nav a{
+    color: #362C2C;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+nav a:hover, .active{
+    color: #362C2C;
+    background-color: #F1E0C9;
+}
+
+nav a:visited{
+    color: #362C2C;
+}
+
+header{
+    height: 100%;
+    display: grid;
+    grid-column: 1 / -1;
+    grid-row: 2 / span 1;
+    vertical-align: middle;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.parallax{
+    background-image: url("../images/banner.jpg");
+}
+
+footer{
+    grid-column: 1 / -1;
+    grid-row: 7 / span 1;
+    text-align: center;
+    background-color: #F1E0C9;
+
+}
+
+.skip a{
+    background-color: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    text-decoration: none;
+    color: black;
+}
+
+.skip a:focus{
+    top: 0;
+}
+
+:focus{
+    border: 2px solid black;
+}
+
+.photos{
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 4;
+}
+
+.photos img{
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.photo-gallery{
+    display: grid;
+    grid-template-rows: 40px 550px 1fr 70px;
+    grid-template-columns: 5% auto auto 5%;
+    grid-gap: 20px;
+    max-width: 100vw;
+}
+
+.nav{
+    text-align: left;
+    grid-column: 1 / -1;
+    grid-row: 1 / span 1;
+}
+
+.events{
+    display: grid;
+    /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 1;
+
+}
+
+.about{
+    display: grid;
+    /*grid-template-rows: 1fr 1fr 1fr 1fr;*/
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+
+    grid-column: 2 / span 2;
+    grid-row: 3 / span 1;
+}
+
+.contact-form {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 5% 1fr 5%;
+    grid-template-rows: 40px 550px 1fr 100px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr;
+
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.card img{
+    border-radius: 10px;
+    
+}
+
+.info{
+    color: black;
+    margin-top: 20px;
+}
+
+#contact-info {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    margin-top: 40px;
+    align-self: center;
+    background-color: #362C2C;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+    color: #F1E0C9;
+}
+
+#contact-info p{
+    margin-bottom: 15px;
+}
+
+.form-content {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    background-color: #362C2C;
+    color: #F1E0C9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.web-link{
+    text-decoration: none;
+    color: #7284A8;
+}
+
+
+
+/*.web_link, a:visited{
+    text-decoration: none;
+    color: #7284A8;
+}
+
+.web_link, a:hover{
+    color: #465672;
+}*/
+
+#form-title{
+    text-align: left;
+    padding-left: 0px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.events #first {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+.events #second {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+.events #third {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+}
+.events #fourth {
+    grid-column: 1 / span 1;
+    grid-row: 4 / span 1;
+}
+
+.about #one {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+.about #two {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+.about #three {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 1;
+}
